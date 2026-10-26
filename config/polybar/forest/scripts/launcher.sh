@@ -1,0 +1,1 @@
+../../../rofi/scripts/launcher_t1

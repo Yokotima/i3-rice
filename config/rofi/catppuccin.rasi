@@ -1,0 +1,74 @@
+* {
+    base:      #1e1e2e;
+    mantle:    #181825;
+    surface0:  #313244;
+    surface1:  #45475a;
+    overlay0:  #6c7086;
+    text:      #cdd6f4;
+    lavender:  #b4befe;
+    mauve:     #cba6f7;
+    red:       #f38ba8;
+
+    background-color: transparent;
+    text-color:       @text;
+    font:             "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    width:            560px;
+    background-color: @base;
+    border:           2px;
+    border-color:     @lavender;
+    border-radius:    14px;
+    padding:          0px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  12px;
+    padding:  16px;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+    background-color: @surface0;
+    border-radius:    10px;
+    padding:          10px 14px;
+    spacing:          10px;
+}
+
+prompt { text-color: @mauve; }
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @overlay0;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: true;
+    scrollbar:    false;
+    spacing:      4px;
+}
+
+element {
+    padding:       8px 12px;
+    spacing:       12px;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: @surface0;
+    text-color:       @lavender;
+}
+
+element-icon {
+    size:           28px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color:     inherit;
+}

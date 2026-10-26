@@ -1,0 +1,4 @@
+*.bak
+*.bak2
+__pycache__/
+.current
